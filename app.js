@@ -120,4 +120,16 @@ function startInterval() {
   collectionInterval = setInterval(collectAutomaticUpgrades, 3000);
 }
 
+  
+
+
+var myMusic= document.getElementById("music");
+function play() {
+myMusic.play();
+}
+
+function pause() {
+myMusic.pause();
+}
+
 draw()

@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
   <title>Underdark Adventure</title>
 </head>
 
@@ -25,23 +26,31 @@
       </div>
       </header>
     </div>
-    
-      </div>
-    <div class = "container-fluid d-flex justify-content-center">
-    <div class="row bg-bar justify-content-center">
-      <div class="col-md-6">
-      </div>
-      <div class="col-md-6">
-        <img src = "https://i.pinimg.com/originals/ce/48/b5/ce48b5ff66a976011a24ac8d7f722d5e.png" onclick="attack()" class="monster">
-      </div>
-      <div class="col-md-6">
+
+    <audio controls id="music">
+      <source src="Chaos-Inside_AdobeStock_353742631_preview.m4a" type="audio/mpeg">
+        <button onclick="play()" type="button">Play </button>
+        <button onclick="pause()" type="button">Pause</button>
       
+      </audio>
+    
+    </div>
+        
+        
+    <div class = "container-fluid d-flex justify-content-center">
+      
+    <div class="row bg-bar justify-content-center">
+    
+      <div class="col-md-12">
+        <marquee onclick ="bounce()">
+        <img src = "https://i.pinimg.com/originals/ce/48/b5/ce48b5ff66a976011a24ac8d7f722d5e.png" onclick="attack()" class="monster">
+        </marquee>
       </div>
     </div>
   </div>
   
  <footer class = "row foot bg-dark d-flex flex-fluid p-4 mb-10">
-   <div id="hide" class="col-md-6 d-flex">
+   <div class="col-md-6 d-flex">
      <h1><b>Items:</b></h1>
      <ul>
      <h4>Dagger (+2 damage)/ <span id='dagger'></span></h4>
